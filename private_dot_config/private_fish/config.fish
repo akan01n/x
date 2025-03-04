@@ -44,6 +44,9 @@ if status is-interactive
     ############################################################################
     #### Aliases
 
+    # Chezmoi
+    abbr -a czp "chezmoi git add . && chezmoi git -- commit -m '-' && chezmoi git push"
+
     # clear tmux and screen history
     abbr -a cls "tmux clear-history && clear"
 

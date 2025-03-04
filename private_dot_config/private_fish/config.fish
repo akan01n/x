@@ -16,7 +16,7 @@ if status is-interactive
     fish_add_path /Users/$USER/Applications
 
     ############################################################################
-    #### Rust Lang (it must go before ASDF, because ASDF will prepend too)
+    #### Rust Lang (it must go before ASDF)
     set -gx --prepend PATH "$HOME/.cargo/bin"
 
     ############################################################################

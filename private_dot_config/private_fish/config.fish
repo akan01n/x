@@ -38,6 +38,13 @@ if status is-interactive
     complete --command aws --no-files --arguments '(begin; set --local --export COMP_SHELL fish; set --local --export COMP_LINE (commandline); aws_completer | sed \'s/ $//\'; end)'
 
     ############################################################################
+    #### Minikube Configuration
+    set -gx DOCKER_TLS_VERIFY 1
+    set -gx DOCKER_HOST "tcp://192.168.64.2:2376"
+    set -gx DOCKER_CERT_PATH "$HOME/.minikube/certs"
+    set -gx MINIKUBE_ACTIVE_DOCKERD minikube
+
+    ############################################################################
     #### Starship Configuration
     starship init fish | source
 

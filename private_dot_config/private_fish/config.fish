@@ -45,6 +45,10 @@ if status is-interactive
     set -gx MINIKUBE_ACTIVE_DOCKERD minikube
 
     ############################################################################
+    #### Zoxide Configuration
+    zoxide init fish | source
+
+    ############################################################################
     #### Starship Configuration
     starship init fish | source
 

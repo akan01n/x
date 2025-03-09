@@ -16,6 +16,13 @@ if status is-interactive
     fish_add_path /Users/$USER/Applications
 
     ############################################################################
+    #### C/C++ Configuration using Homebrew LLVM
+    fish_add_path /usr/local/opt/llvm/bin
+    # For compilers to find llvm you may need to set:
+    set -gx LDFLAGS -L/usr/local/opt/llvm/lib
+    set -gx CPPFLAGS -I/usr/local/opt/llvm/include
+
+    ############################################################################
     #### Rust Lang (must go before ASDF)
     set -gx --prepend PATH "$HOME/.cargo/bin"
 

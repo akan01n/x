@@ -7,3 +7,10 @@ vim.g.ai_cmp = false
 
 -- disable animations
 vim.g.snacks_animate = false
+
+-- iamcco/markdown-preview.nvim
+--
+-- set to 1, the nvim will auto close current preview window when changing
+-- from Markdown buffer to another buffer
+-- default: 1
+vim.g.mkdp_auto_close = 0

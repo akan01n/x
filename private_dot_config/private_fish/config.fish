@@ -64,6 +64,7 @@ if status is-interactive
 
     # Chezmoi
     abbr -a cza "chezmoi apply"
+    abbr -a cze "chezmoi edit ~/.config"
     abbr -a czp "chezmoi git add . && chezmoi git -- commit -m '-' && chezmoi git push"
 
     # clear tmux and screen history
